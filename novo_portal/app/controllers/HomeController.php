@@ -12,8 +12,11 @@ class HomeController extends BaseController {
 	{
 		$this->layout = View::make('layouts.main', array('active' => 'home',));
 		$noticias = Noticia::whereNull('excluido')->orderBy('data_publicacao', 'desc')->take(10)->get();
-
-		$data = array('active' => 'home', 'noticias' => $noticias);
+        $apostilas = Apostila::whereNull('excluido')->take(10)->get();
+		$data = array(
+            'active' => 'home',
+            'noticias' => $noticias,
+            'apostilas' => $apostilas);
 		$this->layout->content = View::make('hello', $data);
 	}
 

@@ -22,7 +22,7 @@
                         @if(!is_null($noticia->imagem)) <img src="{{ asset($noticia->imagem) }}"> @endif
                         <h3>{{ $noticia->titulo }}</h3>
                         <small>{{ preg_replace('/(\d{4})-(\d{2})-(\d{2})\s(.+)/i', '$3/$2/$1 $4', $noticia->data_publicacao) }}</small>
-                        <p>{{ str_limit($noticia->texto, 650) }} <span>continuar lendo</span></p>
+                        <p>{{ str_limit(preg_replace('/(<[^>]+>)/', '', $noticia->texto), 450) }} <span>continuar lendo</span></p>
                     </a>
                 </div>
             </div>
@@ -72,6 +72,17 @@
                         <div role="tabpanel" class="tab-pane" id="mes"></div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <h4>Apostilas</h4>
+            <div class="col-md-offset-2" style="padding-right: 0">
+                <ul id="flexiselDemo3">
+                    @foreach($apostilas as $apostila)
+                        <li><img src="{{ asset($apostila->imagem) }}" ></li>
+                    @endforeach
+                </ul>
             </div>
         </div>
         <br>

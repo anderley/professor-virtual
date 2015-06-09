@@ -128,6 +128,8 @@
     {{ HTML::script('js/bootstrap.min.js') }}
     <!-- Plugin para gerar mascaras nos campos -->
     {{ HTML::script('js/jquery.mask.min.js') }}
+    <!-- Plugin para carousel -->
+    {{ HTML::script('js/jquery.flexisel.js') }}
 
     <script type="text/javascript">
         $('#data').mask('00/00/0000', {placeholder: '__/__/____'});
@@ -152,6 +154,28 @@
             $('#tab-noticias a').click(function(e){
                 e.preventDefault();
                 $(this).tab('show');
+            });
+            $("#flexiselDemo3").flexisel({
+                visibleItems: 3,
+                animationSpeed: 1000,
+                autoPlay: true,
+                autoPlaySpeed: 3000,
+                pauseOnHover: true,
+                enableResponsiveBreakpoints: true,
+                responsiveBreakpoints: {
+                    portrait: { 
+                        changePoint:480,
+                        visibleItems: 1
+                    },
+                    landscape: { 
+                        changePoint:640,
+                        visibleItems: 2
+                    },
+                    tablet: { 
+                        changePoint:768,
+                        visibleItems: 3
+                    }
+                }
             });
         });
     </script>
