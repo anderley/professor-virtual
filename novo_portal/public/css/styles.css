@@ -1,0 +1,107 @@
+a:hover {
+	text-decoration: none;
+}
+
+.top {
+	margin: 10px 0;
+}
+
+.footer {
+	background-image: linear-gradient(to top, #125d93, #194d80);
+	margin-top: 20px;
+	padding: 20px 30px 0;
+}
+
+.footer h5 {
+	color: #6CF;
+	border-bottom: 1px dotted #0876B2;
+}
+
+.footer a {
+	color: #FFF;
+}
+
+.menu-bar {
+	background-color: #194d80;
+	color: #FFF;
+	padding: 0 20px;
+	margin-bottom: 20px;
+}
+
+.menu-bar ul {
+	margin: 0;
+}
+
+.menu-bar li {
+	height: 46px;
+}
+
+.menu-bar li a {
+	color: #FFF;
+	line-height: 46px;
+	padding: 4px;
+}
+
+.menu-bar li:hover,
+.menu-bar li.active {
+	background-color: #125d93;
+}
+
+.painel-login {
+	background-color: #ECECEC;
+	padding: 20px;
+}
+
+.painel-login hr {
+	border-color: #CCC;
+}
+
+.card-noticia {
+	border-color: #cecece;
+	border-style: solid;
+	border-width: 0  0 1px 0;
+	clear: both;
+	display: block;
+	padding: 5px 0;
+}
+.card-noticia a:hover,
+.card-noticia a:active,
+.card-noticia a:visited {
+	text-transform: none;
+}
+
+.card-noticia img,
+.card-noticia-mais-acessadas img,
+.panel-noticia img {
+	float: left;
+	margin-right: 10px;
+}
+
+.card-noticia h3 {
+	margin: 0;
+	padding: 0;
+}
+
+.card-noticia p{
+	color: #333;	
+}
+.card-noticia small {
+	color: #666;	
+}
+
+.card-noticia p>span {
+	color: #f90000;	
+}
+
+.card-noticia-mais-acessadas {
+	border-bottom: 1px solid #c3c3c3;
+	padding-left: 20px;
+}
+
+.card-noticia-mais-acessadas:last-of-type {
+	border: none;
+}
+
+.card-noticia-mais-acessadas p {
+	padding-top: 10px;
+}

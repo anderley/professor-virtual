@@ -1,0 +1,32 @@
+body {
+	padding-top: 60px;
+}
+
+.dual-list-controller {
+	padding-top: 50px;
+}
+
+.dual-list-controller button {
+	margin: 5px 0;
+}
+
+.table td>a {
+	margin-right: 10px;
+}
+
+.noticia-imagem,
+.noticia-edital {
+	background-color: #eee;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.noticia-imagem span,
+.noticia-edital span {
+	cursor: pointer;
+	color: #C51A1A;
+	float: right;
+	font-weight: bold;
+	margin: -10px -3px;
+}

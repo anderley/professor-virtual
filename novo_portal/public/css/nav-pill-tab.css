@@ -1,0 +1,26 @@
+.nav-pills>li>a {
+	border-radius: 0;
+}
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:hover,
+.nav-pills>li.active>a:focus {
+	color: #333;
+	background-color: #f5f5f5;
+	border: 1px solid #bfd0d0;
+	border-radius: 4px 0px 0px 4px;
+	border-right-color: #f5f5f5;
+	margin-right: -1px;
+	z-index: 1;
+}
+
+.tab-content {
+	background-color: #f5f5f5;
+	border: 1px solid #bfd0d0;
+	border-radius: 4px;
+	padding: 20px 20px 20px 40px;
+}
+
+.form-fields {
+	padding: 20px;
+}
