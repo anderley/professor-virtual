@@ -1,7 +1,7 @@
 @section('content')
 
 <div class="container">
-    
+
     @if(Session::get('tipo_alerta'))
         <div class="row">
             <div class="alert {{ Session::get('tipo_alerta') }}" role="alert">
@@ -80,7 +80,7 @@
             <div class="col-md-offset-2" style="padding-right: 0">
                 <ul id="flexiselDemo3">
                     @foreach($apostilas as $apostila)
-                        <li><img src="{{ asset($apostila->imagem) }}" ></li>
+                        <li><a href="{{ $apostila->link_parceiro }}" target="_blank"><img src="{{ asset($apostila->imagem) }}" ></a></li>
                     @endforeach
                 </ul>
             </div>
